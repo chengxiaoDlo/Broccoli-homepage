@@ -48,10 +48,11 @@ export default function({ show, setShow, onSuccess }: IProps) {
           name="userName"
           rules={[
             { required: true, message: 'Please input your full name!' },
-            { pattern: /^([\u4e00-\u9fa5]{1,30}|[a-zA-Z.'\s]{2,40})$/, message: 'Please input the correct full name' }
+            { pattern: /^([\u4e00-\u9fa5]{1,30}|[a-zA-Z.'\s]{2,40})$/, message: 'Please input the correct full name!' }
           ]}
         >
           <Input
+            role="name"
             placeholder="Full name"
             onChange={() => setErrorMessage('')}
           />
@@ -61,10 +62,11 @@ export default function({ show, setShow, onSuccess }: IProps) {
           name="email"
           rules={[
             { required: true, message: 'Please input your email!' },
-            { type: 'email', message: 'Please input the correct email address' }
+            { type: 'email', message: 'Please input the correct email address!' }
           ]}
         >
           <Input
+            role="email"
             placeholder="Email"
             onChange={() => setErrorMessage('')}
           />
@@ -74,7 +76,7 @@ export default function({ show, setShow, onSuccess }: IProps) {
           name="confirmedEmail"
           rules={[
             { required: true, message: 'Please input your email!' },
-            { type: 'email', message: 'Please input the correct email address' },
+            { type: 'email', message: 'Please input the correct email address!' },
             {
               validateTrigger: 'blur',
               validator: (_, value) => {
@@ -86,13 +88,14 @@ export default function({ show, setShow, onSuccess }: IProps) {
           ]}
         >
           <Input
+            role="confirmedEmail"
             placeholder="Confirm Email"
             onChange={() => setErrorMessage('')}
           />
         </Form.Item>
-        <Button disabled={lock} style={{ width: '100%', marginTop: '24px' }} type="primary" htmlType="submit">{btnText}</Button>
+        <Button role="submit" disabled={lock} style={{ width: '100%', marginTop: '24px' }} type="primary" htmlType="submit">{btnText}</Button>
       </Form>
-      {errorMessage ? <div className={styles.error}>{errorMessage}</div> : null}
+      {errorMessage ? <div role="errorMessage" className={styles.error}>{errorMessage}</div> : null}
     </Modal>
   )
 }

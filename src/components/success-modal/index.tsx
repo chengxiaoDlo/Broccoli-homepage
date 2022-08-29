@@ -12,7 +12,7 @@ export default function({ show, setShow }: IProps) {
       visible={show}
       closable={false}
       title="All done!"
-      footer={ <Button style={{ width: '100px' }} type="primary" onClick={() => setShow(false)}>OK</Button> }
+      footer={ <Button role="OkBtn" style={{ width: '100px' }} type="primary" onClick={() => setShow(false)}>OK</Button> }
     >
       You will be one of the first to experience Broccoli & Co. when we launch
     </Modal>

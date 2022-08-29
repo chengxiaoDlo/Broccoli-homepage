@@ -8,3 +8,6 @@ enter `yarn dev` in your terminal, after complies in a few seconds, you can open
 
 ## build
 run `yarn bulid`
+
+## test
+run `yarn test`

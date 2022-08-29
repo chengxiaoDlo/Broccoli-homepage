@@ -5,7 +5,7 @@ import SuccessModal from '@/components/success-modal';
 
 import styles from './index.less';
 
-export default function HomePage() {
+export default function() {
   const [showInviteModal, setShowInviteShowModal] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 

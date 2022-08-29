@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`homepage test render by snapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header>
+      BROCCOLI & CO.
+    </header>
+    <main>
+      <div>
+        <h2>
+          A better way
+        </h2>
+        <h2>
+          to enjoy every day.
+        </h2>
+        <div
+          class="desc"
+        >
+          Be the first to know when we launch
+        </div>
+        <button
+          class="ant-btn ant-btn-primary ant-btn-lg"
+          style="display: block; margin: 32px auto 0px;"
+          type="button"
+        >
+          <span>
+            Request an invite
+          </span>
+        </button>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>
+          Made whit 🖤 in Melbourne.
+        </p>
+        <p>
+          © 2016 Broccoli & Co. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
